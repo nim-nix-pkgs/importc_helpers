@@ -1,5 +1,5 @@
 {
-  description = ''Helpers for supporting and simplifying import of symbols from C into Nim'';
+  description = ''Nim support library for importing symbols from C'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,8 +9,8 @@
   
   inputs.src-importc_helpers-master.flake = false;
   inputs.src-importc_helpers-master.owner = "fredrikhr";
-  inputs.src-importc_helpers-master.ref   = "refs/heads/master";
-  inputs.src-importc_helpers-master.repo  = "nim-importc-helpers";
+  inputs.src-importc_helpers-master.ref   = "master";
+  inputs.src-importc_helpers-master.repo  = "nim-importc-helpers.git";
   inputs.src-importc_helpers-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
